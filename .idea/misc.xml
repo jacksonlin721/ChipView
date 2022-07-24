@@ -6,11 +6,15 @@
         <entry key="..\:/project/temp/ChipView/app/src/main/res/drawable-v24/btn_trans_base10.xml" value="0.119" />
         <entry key="..\:/project/temp/ChipView/app/src/main/res/drawable/chip_background.xml" value="0.2405" />
         <entry key="..\:/project/temp/ChipView/app/src/main/res/drawable/circle.xml" value="0.2405" />
+        <entry key="..\:/project/temp/ChipView/app/src/main/res/drawable/ic_person_24dp.xml" value="0.2405" />
         <entry key="..\:/project/temp/ChipView/app/src/main/res/layout/activity_main.xml" value="0.2971014492753623" />
+        <entry key="..\:/project/temp/ChipView/app/src/main/res/layout/chip_group.xml" value="0.33229166666666665" />
+        <entry key="..\:/project/temp/ChipView/app/src/main/res/layout/chip_item.xml" value="0.27276613937580163" />
         <entry key="..\:/project/temp/ChipView/app/src/main/res/layout/chips_view.xml" value="0.3333333333333333" />
         <entry key="..\:/project/temp/ChipView/app/src/main/res/layout/item_checkable_contact.xml" value="0.3333333333333333" />
         <entry key="..\:/project/temp/ChipView/app/src/main/res/layout/item_chip.xml" value="0.3333333333333333" />
         <entry key="..\:/project/temp/ChipView/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2405" />
+        <entry key="..\:/project/temp/ChipView/app/src/main/res/xml/chip.xml" value="0.19356300997280146" />
       </map>
     </option>
   </component>
