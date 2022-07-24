@@ -56,6 +56,7 @@ import androidx.core.content.ContextCompat;
 import com.example.chipview.R;
 import com.example.chipview.library.views.model.Contact;
 import com.example.chipview.library.views.util.Common;
+import com.google.android.material.chip.ChipGroup;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
@@ -122,6 +123,8 @@ public class ChipsView extends ScrollView implements ChipsEditText.InputConnecti
     @ColorInt
     private int mInitialsTextColor;
     //</editor-fold>
+
+    private ChipGroup chipGroup;
 
     //<editor-fold desc="Constructors">
     public ChipsView(Context context) {
@@ -207,6 +210,9 @@ public class ChipsView extends ScrollView implements ChipsEditText.InputConnecti
 
         mChipsContainer.addView(linearLayout);
 
+        /*chipGroup = (ChipGroup) inflate(getContext(), R.layout.chip_group, null);
+        mChipsContainer.addView(chipGroup);*/
+
         mEditText = new ChipsEditText(getContext(), this);
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         layoutParams.topMargin = (int) (SPACING_TOP * mDensity);
@@ -246,6 +252,10 @@ public class ChipsView extends ScrollView implements ChipsEditText.InputConnecti
         }
     }
 
+    private void addChip() {
+
+    }
+
     private void initListener() {
         mChipsContainer.setOnClickListener(new OnClickListener() {
             @Override
@@ -280,6 +290,7 @@ public class ChipsView extends ScrollView implements ChipsEditText.InputConnecti
     }
 
     public void addChip(String displayName, Uri avatarUrl, Contact contact, boolean isIndelible) {
+
         Chip chip = new Chip(displayName, avatarUrl, contact, isIndelible);
         mChipList.add(chip);
         if (mChipsListener != null) {
@@ -295,6 +306,15 @@ public class ChipsView extends ScrollView implements ChipsEditText.InputConnecti
                 fullScroll(View.FOCUS_DOWN);
             }
         });
+    }
+
+    private void createChip() {
+        /*Chip chip = new Chip(getContext());
+        chip.setText("ABC");
+        chip.setChipBackgroundColorResource(R.color.colorAccent);
+        chip.setCloseIconVisible(true);
+        chip.setTextColor(getResources().getColor(R.color.white));
+        chip.setTextAppearance(R.style.ChipTextAppearance);*/
     }
 
     public void setTypeface(@NonNull Typeface typeface) {
